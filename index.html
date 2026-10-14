@@ -91,6 +91,7 @@
   footer .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;padding-top:30px;padding-bottom:max(30px,env(safe-area-inset-bottom))}
   footer img{display:block;height:34px;width:auto}
   footer span{font-size:13px;color:rgba(250,247,245,.75)}
+  footer .credito{font-size:12.5px;color:rgba(250,247,245,.6);width:100%;text-align:center;padding-top:14px;border-top:1px solid rgba(250,247,245,.18);margin-top:4px}
 
   @media (max-width:560px){
     header{padding-top:32px}
@@ -149,6 +150,7 @@
   <div class="wrap">
     <img src="data:image/webp;base64,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" alt="Zahil" width="301" height="112">
     <span id="rodape"></span>
+    <span class="credito" id="credito"></span>
   </div>
 </footer>
 
@@ -312,6 +314,7 @@ function render() {
 q.addEventListener('input', render);
 render();
 document.getElementById('rodape').textContent = 'Fichas técnicas do portfólio Zahil';
+document.getElementById('credito').textContent = 'Desenvolvido por Breno Souto';
 </script>
 </body>
 </html>
